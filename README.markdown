@@ -22,6 +22,16 @@ and we'll do our best to resolve the situation.
     git clone git://github.com/rspec/rspec-tmbundle.git RSpec.tmbundle
     osascript -e 'tell app "TextMate" to reload bundles'
 
+## Configuration
+
+The RSpec TextMate bundle does not `require "rubygems"` so that users who choose
+other packaging mechanisms can still use it. If you _are_ using Rubygems as your package
+manager, then the simplest thing to do is
+
+* open up TextMate Preferences
+* go to the Advanced tab
+* add a variable named `RUBYOPT` with the value `rubygems`
+
 ## History
 Parts of RSpec.tmbundle is based on Florian Weber's TDDMate.
 

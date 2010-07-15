@@ -35,9 +35,7 @@ module Spec
         argv += ENV['TM_RSPEC_OPTS'].split(" ") if ENV['TM_RSPEC_OPTS']
         Dir.chdir(project_directory) do
           if rspec2?
-            options = ::RSpec::Core::ConfigurationOptions.new(argv)
-            options.parse_options
-            ::RSpec::Core::CommandLine.new(options).run(STDERR, stdout)
+            ::RSpec::Core::Runner.run(argv, STDERR, stdout)
           else
             ::Spec::Runner::CommandLine.run(::Spec::Runner::OptionParser.parse(argv, STDERR, stdout))
           end

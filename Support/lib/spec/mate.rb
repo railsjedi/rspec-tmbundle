@@ -21,7 +21,6 @@ begin
   require 'spec/autorun'
 rescue LoadError
   require 'rspec/core'
-  RSpec::Core::Runner.disable_autorun!
 end
 
 def rspec2?
