@@ -13,13 +13,13 @@ If you're not using Bundler, the TMBundle tries to do the right thing based the
 presence of assorted files and paths in your project. Obviously, everybody's
 environment is going to be a bit different, so let us know if this doesn't work
 for you by filing an issue at
-[http://github.com/rspec/rspec-tmbundle](http://github.com/rspec/rspec-tmbundle)
+[http://github.com/railsjedi/rspec-tmbundle](http://github.com/railsjedi/rspec-tmbundle)
 and we'll do our best to resolve the situation.
 
 ## Installation
 
     cd ~/Library/Application\ Support/TextMate/Bundles/
-    git clone git://github.com/rspec/rspec-tmbundle.git RSpec.tmbundle
+    git clone git://github.com/railsjedi/rspec-tmbundle.git RSpec.tmbundle
     osascript -e 'tell app "TextMate" to reload bundles'
 
 ## Configuration
